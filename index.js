@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./readme');
+const generateMarkdown = require('./utils/readme');
 
 const questions = [
     {
@@ -36,7 +36,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What command should be run to install dependencies?',
+        message: 'What steps and commands should be run to install dependencies?',
         name: 'dependency',
     },
     {
