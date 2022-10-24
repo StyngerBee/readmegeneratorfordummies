@@ -1,5 +1,5 @@
 
-
+// function for readme template, and it's values from the index.js questions.
 function generateMarkdown(data){
     return `# ${data.project}
 
@@ -31,6 +31,8 @@ function generateMarkdown(data){
     `
 }
 
+
+//  function to determine the input of the user for which license, then plugs it into the readme.
 displayLicense = function (responses){
     const input = responses.license;
     if(typeof input === 'string'){
@@ -86,5 +88,5 @@ displayLicense = function (responses){
     };
 };
 
-
+// exports generateMarkdown function to index.js
 module.exports = generateMarkdown;
