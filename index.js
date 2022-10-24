@@ -1,7 +1,9 @@
+// assigns vars to functions from inquirer and node, also requires readme.js in order to use markdown function
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/readme');
 
+// puts all question prompts within a array assigned to questions, and gives data for each. 
 const questions = [
     {
         type: 'input',
@@ -57,14 +59,14 @@ const questions = [
 
 ]
 
-
+// writes data to file 'DUMMYREADME' 
 function writeToFile(data) {
     fs.writeFile('DUMMYREADME.md', data, (err) =>
         err ? console.error(err) : console.log('README file saved under DUMMYREADME.md')
     )
 };
 
-
+// init function in order to initialize inquirer
 function init() {
     inquirer
         .prompt(questions)
