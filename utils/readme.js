@@ -32,7 +32,7 @@ function generateMarkdown(data){
 }
 
 displayLicense = function (responses){
-    const input = responses;
+    const input = responses[5];
     if(typeof input === 'string'){
         switch(input){
             case 'MIT':
