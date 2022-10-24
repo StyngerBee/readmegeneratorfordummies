@@ -57,6 +57,7 @@ const questions = [
 
 ]
 
+
 function writeToFile(data) {
     fs.writeFile('DUMMYREADME.md', data, (err) =>
         err ? console.error(err) : console.log('README file saved under DUMMYREADME.md')
