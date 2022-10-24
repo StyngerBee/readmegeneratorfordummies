@@ -1,9 +1,9 @@
 function generateMarkdown(data){
     return `# ${data.project}
 
-    ## Description
+## Description
     ${data.description}
-    ## Table of Contents
+## Table of Contents
 
     - Usage
     - Installation
@@ -12,19 +12,21 @@ function generateMarkdown(data){
     - Contact Me
     
 
-    ## Usage 
+## Usage 
     ${data.usage}
-    ### Testing
+### Testing
     ${data.test}
-    ## Installation
+## Installation
     ${data.dependency}
-    ## Credits
+## Credits
     ${data.contributions}
-    ## License
+## License
     ${data.license}
-    ## Contact Me
-    ### ${data.fname}
+## Contact Me
+### ${data.fname}
     Github: ${data.username}
     Email: ${data.email}
     `
 }
+
+module.exports = generateMarkdown;
