@@ -7,11 +7,11 @@ function generateMarkdown(data){
     ${data.description}
 ## Table of Contents
 
-    - Usage
-    - Installation
-    - Credits
-    - License
-    - Contact Me
+* [Usage](#usage)
+* [Installation](#installation)
+* [Credits](#credits)
+* [License](#license)
+* [Contact Me](#contact-me)
     
 
 ## Usage 
